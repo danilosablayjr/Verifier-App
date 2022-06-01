@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center"> 
+    <h1 class="text-center">Digital Covid Certificate Verifier</h1>
+    <div class="d-flex justify-content-center mt-3 hide-on-result">
+          <div id="canvas-overlay" class="p-5 bg-white">
+            <img src="/img/qrcode.png" alt="" width="152" height="152"/>
+          </div>
+          <canvas id="canvas" class="qr-canvas" hidden></canvas>
+          <div id="vid-overlay-in" hidden>
+            <div id="vid-overlay-line"></div>
+          </div>
+        </div>
+         <div class="d-inline-block mt-1 hide-on-result">
+          <div id="loading-message" class="text-white" hidden>
+            Loading camera...
+          </div>
+        </div>
+         <div class="d-inline-block mt-1 pt-2 pl-2 pr-2 pb-0 w-full">
+          <button id="scan-qr-code" class="btn btn-primary custom-btn">Scan QR Code</button>  
+          <div id="scan-qr-code-desc" class=" mt-2">Click "Scan QR Code" to verify an EU Digital COVID Certificate</div>
+
+        </div>
+
+
+   
+</div>
